@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* span {
+  color: #F8B602;
+}
+* button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.side h1 {
+  margin-bottom: 20px;
+  padding-left: 70px;
+  width: 270px;
+}
+.side button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background: none;
+  align-items: center;
+  font-size: 14px;
+  border: 3px solid #fff;
+  font-weight: 500;
+  line-height: 27px;
+  transition: 0.3s ease-in-out;
+}
+.side button svg {
+  margin-right: 20px;
+}
+.side button:hover {
+  width: 250px;
+  background: #F8B602;
+  color: #fff;
+}
+.side button:active {
+  background: #fff;
+  border: 3px solid #F8B602;
+  color: #000;
+}
+.side div {
+  background-color: #ffb303;
+  margin-top: 50px;
+  color: #fff;
+  border-radius: 20px;
+  width: 230px;
+  text-align: center;
+}
+.side div h1 {
+  padding-top: 20px;
+  line-height: 25px;
+  margin-left: -60px;
+  font-size: 18px;
+}
+.side div button {
+  background-color: #fff;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.side div button:hover {
+  color: #fff;
+  width: 135px;
+  background-color: #F8B602;
+}
+
+.menu-bar {
+  background-color: #e7e7e7;
+  padding: 30px 40px;
+  width: 900px;
+}
+.menu-bar .top {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-bar .top input {
+  padding-left: 30px;
+  padding-right: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+}
+.menu-bar .center {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-bar .center h1 {
+  font-size: 25px;
+}
+.menu-bar .center button {
+  background-color: #e7e7e7;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffb303;
+  transition: 0.2s;
+}
+.menu-bar .center button:hover {
+  color: #b17c00;
+}
+.menu-bar .center button:active {
+  color: #F8B602;
+}
+.menu-bar .main {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-bar .main button {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  width: 130px;
+  transition: 0.3s;
+}
+.menu-bar .main button svg {
+  padding-bottom: 10px;
+}
+.menu-bar .main button:hover {
+  background-color: #b3b3b3;
+  color: #fff;
+}
+.menu-bar .dish {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.menu-bar .dish h1 {
+  font-size: 25px;
+}
+.menu-bar .dish button {
+  background-color: #e7e7e7;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffb303;
+  transition: 0.2s;
+}
+.menu-bar .dish button:hover {
+  color: #b17c00;
+}
+.menu-bar .dish button:active {
+  color: #F8B602;
+}
+.menu-bar .food .ones {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-bar .food .ones .one {
+  background-color: #fff;
+  border-radius: 20px;
+  gap: 20px;
+  width: 250px;
+  padding: 20px;
+}
+.menu-bar .food .ones .one .in {
+  display: flex;
+}
+.menu-bar .food .ones .one .in h1 {
+  font-size: 15px;
+  background-color: red;
+  height: 18px;
+  width: 70px;
+  padding-left: 5px;
+  margin-left: -20px;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+}
+.menu-bar .food .ones .one .in img {
+  margin-top: 20px;
+  width: 130px;
+  margin-left: -10px;
+  height: 100px;
+}
+.menu-bar .food .ones .one .in .heart {
+  width: 25px;
+  height: 20px;
+  margin-top: -1px;
+  margin-left: 15px;
+}
+.menu-bar .food .ones .one .on {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-bar .food .ones .one .on button {
+  background-color: #F8B602;
+  border: 3px solid #F8B602;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+.menu-bar .food .ones .one .on button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.menu-bar .food .ones .one .on button:active {
+  border: 3px solid #fff;
+}
+.menu-bar .food .bottom .onn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.menu-bar .food .bottom .onn h1 {
+  font-size: 25px;
+}
+.menu-bar .food .bottom .onn button {
+  background-color: #e7e7e7;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffb303;
+  transition: 0.2s;
+}
+.menu-bar .food .bottom .onn button:hover {
+  color: #b17c00;
+}
+.menu-bar .food .bottom .onn button:active {
+  color: #F8B602;
+}
+.menu-bar .food .bottom .off {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.menu-bar .food .bottom .off img {
+  width: 150px;
+}
+.menu-bar .food .bottom .off .div {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 250px;
+}
+.menu-bar .food .bottom .off .div p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-bar .food .bottom .off .div h1 {
+  margin-bottom: 10px;
+}
+
+.order-bar {
+  width: 300px;
+  padding: 30px 20px;
+}
+.order-bar .icon {
+  display: flex;
+  justify-content: space-between;
+}
+.order-bar .icon button {
+  align-items: center;
+  background-color: #fff;
+  border: 3px solid #fff;
+  transition: 0.3s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  height: 50px;
+}
+.order-bar .icon button svg {
+  width: 25px;
+}
+.order-bar .icon button:hover {
+  border: 3px solid #ffb303;
+}
+.order-bar .h1 h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.order-bar .inf {
+  display: flex;
+  background-color: #F8B602;
+  padding: 20px;
+  border-radius: 15px;
+  width: 270px;
+}
+.order-bar .inf .ball {
+  margin-right: 10px;
+  background-color: #fff;
+  height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.order-bar .inf .top {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.order-bar .inf .top button {
+  background-color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.order-bar .inf .top button:hover {
+  background-color: #a0a0a0;
+}
+.order-bar .inf .top button:active {
+  background-color: #F8B602;
+}
+.order-bar .inf .top h1 {
+  padding-top: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+.order-bar .address {
+  margin-top: 20px;
+}
+.order-bar .address h1 {
+  color: #A098AE;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.order-bar .address .in {
+  display: flex;
+}
+.order-bar .address .in h1 {
+  color: #000;
+}
+.order-bar .address .in button {
+  margin-left: 45px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #F8B602;
+  border: 2px solid #F8B602;
+  width: 80px;
+  transition: 0.3s;
+}
+.order-bar .address .in button:active {
+  background-color: #F8B602;
+  color: #000;
+}
+.order-bar p {
+  margin-top: 10px;
+  color: #A098AE;
+}
+.order-bar .butt {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.order-bar .butt button {
+  background-color: #fff;
+  border: 2px solid #A098AE;
+  padding: 2px 7px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.order-bar .butt button:hover {
+  background-color: #F8B602;
+  color: #fff;
+  border: 2px solid #F8B602;
+}
+.order-bar .butt button:active {
+  background-color: #fff;
+  color: #000;
+}
+.order-bar h2 {
+  margin-top: 10px;
+}
+.order-bar .menu {
+  margin-bottom: 20px;
+}
+.order-bar .menu .div {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.order-bar .menu .div img {
+  margin-right: 10px;
+}
+.order-bar .menu .div .word h1 {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.order-bar .menu .div .word p {
+  margin-left: 10px;
+}
+.order-bar .menu .div h1 {
+  margin-left: 20px;
+  font-size: 18px;
+  right: 0;
+}
+.order-bar .bottom .one {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.order-bar .bottom .one h1 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+.order-bar .bottom .two {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.order-bar .bottom .two h2 {
+  font-size: 20px;
+}
+.order-bar .bottom .two h1 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+.order-bar .bottom .on {
+  display: flex;
+  width: 260px;
+  align-items: center;
+  padding: 2px 20px;
+  background-color: #fff;
+  border: 2px solid #F8B602;
+  border-radius: 10px;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+.order-bar .bottom .on svg {
+  width: 30px;
+}
+.order-bar .bottom .on:hover {
+  color: #fff;
+  background-color: #F8B602;
+}
+.order-bar .bottom .on:active {
+  background-color: #fff;
+  color: #000;
+}
+.order-bar .bottom button {
+  margin-top: 20px;
+  width: 260px;
+  background-color: #F8B602;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.order-bar .bottom button:hover {
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */
