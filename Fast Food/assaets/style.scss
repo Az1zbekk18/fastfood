@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     span {
         color: #F8B602;
     }
@@ -13,16 +14,15 @@
     }
 }
 
-body {
+.container {
     display: flex;
 }
 
 .side {
     display: flex;
     flex-direction: column;
-    padding: 30px 40px;
+    padding: 30px 30px;
     align-items: flex-start;
-    overflow: hidden;
 
     h1 {
         margin-bottom: 20px;
@@ -90,10 +90,16 @@ body {
     }
 }
 
+
 .menu-bar {
     background-color: #e7e7e7;
     padding: 30px 40px;
     width: 900px;
+    img{
+        margin-top: 20px;
+        width: 800px;
+        margin-bottom: 20px;
+    }
     .top {
         display: flex;
         justify-content: space-between;
@@ -146,8 +152,10 @@ body {
             width: 130px;
             transition: .3s;
 
-            svg {
+            img {
                 padding-bottom: 10px;
+                width: 40px;
+                height: 50px;
             }
 
             &:hover {
@@ -251,6 +259,10 @@ body {
                         &:active {
                             border: 3px solid #fff;
                         }
+                    }
+                    img{
+                        margin-bottom: -1px;
+                        width: 120px;
                     }
                 }
             }

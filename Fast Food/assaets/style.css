@@ -11,16 +11,15 @@
   cursor: pointer;
 }
 
-body {
+.container {
   display: flex;
 }
 
 .side {
   display: flex;
   flex-direction: column;
-  padding: 30px 40px;
+  padding: 30px 30px;
   align-items: flex-start;
-  overflow: hidden;
 }
 .side h1 {
   margin-bottom: 20px;
@@ -84,6 +83,11 @@ body {
   padding: 30px 40px;
   width: 900px;
 }
+.menu-bar img {
+  margin-top: 20px;
+  width: 800px;
+  margin-bottom: 20px;
+}
 .menu-bar .top {
   display: flex;
   justify-content: space-between;
@@ -129,8 +133,10 @@ body {
   width: 130px;
   transition: 0.3s;
 }
-.menu-bar .main button svg {
+.menu-bar .main button img {
   padding-bottom: 10px;
+  width: 40px;
+  height: 50px;
 }
 .menu-bar .main button:hover {
   background-color: #b3b3b3;
@@ -218,6 +224,10 @@ body {
 }
 .menu-bar .food .ones .one .on button:active {
   border: 3px solid #fff;
+}
+.menu-bar .food .ones .one .on img {
+  margin-bottom: -1px;
+  width: 120px;
 }
 .menu-bar .food .bottom .onn {
   display: flex;
